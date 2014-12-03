@@ -1,0 +1,23 @@
+<template name="experimentItem">
+    <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+            <img src="{{url}}" alt="...">
+            <div class="caption">
+                <h3>{{title}}</h3>
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        {{shortDescription}}
+                    </div>
+                </div>
+                {{> experimentDetailsList}}
+                <p>
+                    {{#if ownPost}}<a href="{{pathFor 'experimentEdit'}}" class="btn btn-default">{{_ "edit"}}</a> {{/if}}
+                    <a href="{{pathFor 'experimentPage'}}" class="discuss btn btn-primary">{{_ "show"}}</a>
+                    {{#unless ownPost}}<a href="#" class="upvote btn btn-default {{upvotedClass}}"><i class="fa fa-thumbs-o-up"></i></a>{{/unless}}
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+</template>

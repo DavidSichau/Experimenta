@@ -1,0 +1,16 @@
+<template name="experimentPage">
+    <div class="row">
+        {{> experimentFullItem}}
+    </div>
+    <ul class="comments">
+        {{#each comments}}
+            {{> commentItem }}
+        {{/each}}
+    </ul>
+
+    {{#if currentUser}}
+        {{> commentSubmit}}
+    {{else}}
+        <p>Please log in to leave a comment</p>
+    {{/if}}
+</template>

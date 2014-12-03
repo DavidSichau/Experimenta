@@ -1,0 +1,18 @@
+<template name="experimentList">
+    <div class="experiments">
+        <div class="row">
+            {{#each experiments}}
+                {{> experimentItem}}
+            {{/each}}
+        </div>
+
+        {{#if nextPath}}
+            <a class="load-more" href="{{nextPath}}">Load more</a>
+        {{else}}
+            {{#unless ready}}
+                {{> spinner}}
+            {{/unless}}
+        {{/if}}
+
+    </div>
+</template>

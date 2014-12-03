@@ -1,0 +1,34 @@
+{
+  "title": "Experimenta",
+  "new-view": "New",
+  "best-view": "Best",
+  "notifications": "Notifications",
+  "no-notifications": "No Notifications",
+  "notifications-comment": "commented on your post",
+  "Access_Denied": "Access Denied",
+  "accessDeniedMessage": "You can't get here! Please log in.",
+  "addComment": "Add comment about this experiment.",
+  "submitComment": "Submit Comment",
+  "submitExperiment": "Submit Experiment",
+  "notFound": "Sorry, we couldn't find a page at this address.",
+  "languages": "Languages",
+  "votes": "Vote",
+  "votes_plural": "Votes",
+  "by_author": "Submitted by",
+  "keywords": "Keywords",
+  "level": "Level",
+  "comments": "Comment",
+  "comments_plural": "Comments",
+  "edit": "Edit",
+  "show": "View",
+  "experimentTitle": "Title",
+  "imageUrl": "Image Url",
+  "experimentShortDescription": "Short Description",
+  "experimentLargeDescription": "Full Description",
+  "experimentKeywords": "Keywords",
+  "experimentLevel": "Level",
+  "imageHint": "For optimal user experience scale the image to a width of 360px and height of 150px"
+
+
+
+}

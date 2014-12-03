@@ -1,0 +1,51 @@
+<template name="experimentEdit">
+    <form class="main form">
+        <div class="form-group {{errorClass 'title'}}">
+            <label class="control-label" for="title">{{_ "experimentTitle"}}</label>
+            <div class="controls">
+                <input name="title" id="title" disabled type="text" value="{{title}}" placeholder="{{_ 'Title'}}" class="form-control"/>
+                <span class="help-block">{{errorMessage 'title'}}</span>
+            </div>
+        </div>
+        <div class="form-group {{errorClass 'url'}}">
+            <label class="control-label" for="url">{{_ "imageUrl"}}</label>
+            <div class="controls">
+                <input name="url" id="url" type="text" value="{{url}}" placeholder="{{_ "imageUrl"}}" class="form-control"/>
+                <span class="help-block">{{errorMessage 'url'}}</span>
+                <span class="help-block">{{_ 'imageHint'}}</span>
+            </div>
+        </div>
+        <div class="form-group {{errorClass 'shortDescription'}}">
+            <label class="control-label" for="shortDescription">{{_ "experimentShortDescription"}}</label>
+            <textarea name="shortDescription" id="shortDescription" class="form-control" rows="3">{{shortDescription}}</textarea>
+            <span class="help-block">{{errorMessage 'shortDescription'}}</span>
+        </div>
+
+        <div class="form-group {{errorClass 'largeDescription'}}">
+            <label class="control-label"  for="largeDescription">{{_ "experimentLargeDescription"}}</label>
+            <textarea name="largeDescription" id="largeDescription" class="form-control" rows="16">{{{largeDescription}}}</textarea>
+            <span class="help-block">{{errorMessage 'largeDescription'}}</span>
+        </div>
+
+        <div class="form-group {{errorClass 'keywords'}}">
+            <label class="control-label" for="keywords">{{_ "experimentKeywords"}}</label>
+            <div class="controls">
+                <input name="keywords" id="keywords" type="text" value="{{keywordsHelper}}" placeholder="{{_ 'keywords'}}" class="form-control"/>
+                <span class="help-block">{{errorMessage 'keywords'}}</span>
+            </div>
+        </div>
+
+        <div class="form-group {{errorClass 'level'}}">
+            <label class="control-label" for="level">{{_ "experimentLevel"}}</label>
+            <div class="controls">
+                <input name="level" id="level" type="text" value="{{levelsHelper}}" placeholder="{{_ 'experimentLevel'}}" class="form-control"/>
+                <span class="help-block">{{errorMessage 'level'}}</span>
+            </div>
+        </div>
+        <input type="submit" value="Submit" class="btn btn-primary submit"/>
+        <hr/>
+        <a class="btn btn-danger delete" href="#">Delete post</a>
+    </form>
+
+
+</template>

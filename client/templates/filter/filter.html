@@ -1,0 +1,22 @@
+<template name="filter">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{_ 'filter'}} <span class="caret"></span></a>
+    <div id='filter' class="dropdown-menu" role="menu">
+        <form role="form">
+            <div class="form-group {{errorClass 'authorsFilter'}}">
+                <label class="control-label" for="authorsFilter">{{_ 'authors'}}</label>
+                <input type="email" class="form-control" id="authorsFilter" name="authorsFilter" placeholder="{{_ 'authors'}}">
+                <span class="help-block">{{errorMessage 'authorsFilter'}}</span>
+            </div>
+            <div class="form-group {{errorClass 'keywordsFilter'}}">
+                <label class="control-label" for="keywordsFilter">{{_ 'keywords'}}</label>
+                <input type="text" class="form-control" id="keywordsFilter" name="keywordsFilter" placeholder="{{_ 'keywords'}}">
+                <span class="help-block">{{errorMessage 'keywordsFilter'}}</span>
+            </div>
+            <div class="form-group {{errorClass 'levelsFilter'}}">
+                <label class="control-label" for="levelsFilter">{{_ 'levels'}}</label>
+                <input type="text" class="form-control" name="levelsFilter" id="levelsFilter" placeholder="{{_ 'levels'}}">
+                <span class="help-block">{{errorMessage 'levelsFilter'}}</span>
+            </div>
+        </form>
+    </div>
+</template>

@@ -1,0 +1,32 @@
+<template name="experimentDetailsList">
+    <ul class="list-group">
+        <li class="list-group-item">
+            <span class="badge">{{votes}}</span>
+            {{_ "votes" count=votes}}
+        </li>
+        <li class="list-group-item">
+            <span class="badge">{{commentsCount}}</span>
+            {{_ "comments" count=commentsCount}}:
+        </li>
+        <li class="list-group-item">
+            <span class="badge">{{author}}</span>
+            {{_ "by_author"}}
+        </li>
+        <li class="list-group-item">
+            {{#each keywords}}
+            <span class="badge">
+                {{this}}</span>
+            {{/each}}
+            {{_ "keywords"}}
+        </li>
+        <li class="list-group-item">
+            {{#each level}}
+                <span class="badge">
+                    {{this}}</span>
+            {{/each}}
+            {{_ "level"}}
+        </li>
+    </ul>
+
+
+</template>
