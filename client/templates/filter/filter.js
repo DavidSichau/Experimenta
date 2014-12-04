@@ -8,12 +8,6 @@ Template.filter.created = function() {
 };
 
 
-Template.filter.rendered = function() {
-    $('.dropdown-menu').click(function (e) {
-        e.stopPropagation();
-    });
-};
-
 Template.filter.helpers({
     errorMessage: function(field) {
         return Template.instance().errors.get()[field];
@@ -123,7 +117,7 @@ Template.filter.events({
         autoCompleteInit();
     },
     'click .dropdown-menu': function(e) {
-        console.log('lkfjkdsal')
+        e.stopPropagation();
     }
 
 });

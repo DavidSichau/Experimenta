@@ -16,7 +16,9 @@
   "votes_plural": "Votes",
   "by_author": "Submitted by",
   "keywords": "Keywords",
+  "authors": "Authors",
   "level": "Level",
+  "levels": "Levels",
   "comments": "Comment",
   "comments_plural": "Comments",
   "edit": "Edit",
@@ -27,7 +29,22 @@
   "experimentLargeDescription": "Full Description",
   "experimentKeywords": "Keywords",
   "experimentLevel": "Level",
-  "imageHint": "For optimal user experience scale the image to a width of 360px and height of 150px"
+  "imageHint": "For optimal user experience scale the image to a width of 360px and height of 150px",
+  "deletePost": "Delete Post",
+  "submitButton": "Submit",
+  "loadMore": "Load more",
+  "loginComment": "Please log in to leave a comment",
+  "errorCommentOnPost": "You must comment on a post",
+  "errorsExpTitle": "Please fill in a headline",
+  "errorsExpUrl": "Please fill in a image URL",
+  "errorsExpSDes": "Please fill in a short description",
+  "errorsExpLDes": "Please fill in a large description",
+  "errorsExpKeyword": "Please fill in a keywords",
+  "errorsExpLevel": "Please fill in a Level",
+  "errorExpInsert": "You must set up all fields of your post",
+  "errorUpvotePost": "You weren't able to upvote that post",
+  "filter": "Filter"
+
 
 
 
