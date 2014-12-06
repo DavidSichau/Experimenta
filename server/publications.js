@@ -28,7 +28,6 @@ Meteor.publish('singleExperiment', function(id) {
 
 Meteor.publish('comments', function(experimentId) {
     check(experimentId, String);
-    console.log(Comments.find({experimentId: experimentId}).count())
     return Comments.find({experimentId: experimentId});
 });
 
