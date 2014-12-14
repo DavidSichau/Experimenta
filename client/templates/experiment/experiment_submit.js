@@ -4,7 +4,6 @@
  */
 
 
-
 Template.experimentSubmit.events({
     'submit form': function(e) {
         e.preventDefault();
@@ -59,7 +58,6 @@ Template.experimentSubmit.rendered = function() {
         ]
     });
 
-
     $('input[name=keywords]').tokenfield({
         autocomplete: {
             source: _.pluck(Keywords.find().fetch(), 'value'),
@@ -74,7 +72,7 @@ Template.experimentSubmit.rendered = function() {
                 if (result !== null) {
                     Keywords.insert({
                         value: value,
-                        description: result
+                        label: result
                     });
                 }
             });
@@ -96,7 +94,7 @@ Template.experimentSubmit.rendered = function() {
                 if (result !== null) {
                     Levels.insert({
                         value: value,
-                        description: result
+                        label: result
                     });
                 }
             });

@@ -2,20 +2,20 @@
 if(Keywords.find().count() === 0) {
     Keywords.insert({
         value: "Physik",
-        description: "alles was mit Physik zu tun hat"
+        label: "Physik"
     });
     Keywords.insert({
         value: "Chemie",
-        description: "alles was mit Chemie zu tun hat"
+        label: "Chemie"
     });
 
     Keywords.insert({
         value: "Bio",
-        description: "alles was mit Bio zu tun hat"
+        label: "Bio"
     });
     Keywords.insert({
         value: "Strom",
-        description: "alles was mit Strom zu tun hat"
+        label: "Strom"
     });
 }
 
