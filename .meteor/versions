@@ -17,6 +17,7 @@ check@1.0.2
 coffeescript@1.0.4
 ctl-helper@1.0.4
 ctl@1.0.2
+davidsichau:meteor-lti-auth@1.0.1
 ddp@1.0.12
 deps@1.0.5
 ejson@1.0.4
@@ -42,7 +43,6 @@ iron:router@1.0.3
 iron:url@1.0.3
 jquery@1.0.1
 json@1.0.1
-lane:lit-auth@0.0.0
 launch-screen@1.0.0
 less@1.0.11
 livedata@1.0.11

@@ -22,5 +22,5 @@ aldeed:collection2
 aldeed:autoform
 natestrauser:select2
 meteorhacks:inject-initial
-lane:lit-auth
+davidsichau:meteor-lti-auth
 

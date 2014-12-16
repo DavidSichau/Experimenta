@@ -1,0 +1,3 @@
+[submodule "packages/davidsichau:meteor-lti-auth"]
+	path = packages/davidsichau:meteor-lti-auth
+	url = https://github.com/DavidSichau/meteor-lti-auth.git
